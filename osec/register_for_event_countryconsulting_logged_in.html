@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://sta.osec.ch/" />
+<title>Osec Register for Event Countryconsulting logged in</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">New Test</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>de/event/selenium-eventtest-laenderberatung</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Jetzt anmelden! »</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-company</td>
+	<td>Seleniumtest</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-address</td>
+	<td>Seleniumstrasse</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-postal-code</td>
+	<td>8005</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-place</td>
+	<td>Seleniumtest</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-telephone</td>
+	<td>123456789</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-comments</td>
+	<td>only a test</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.event-info.userinput</td>
+	<td>Seleniumtest</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h2</td>
+	<td>Anmeldebestätigung Selenium Eventtest Länderberatung</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.event-thankyou</td>
+	<td>Wir freuen uns auf einen interessanten Anlass und Ihre Teilnahme.<br /><br />Sie werden zwecks Terminvereinbarung von unserem ExportHelp in Kürze telefonisch kontaktiert. <br /><br />Freundliche Grüsse<br />Osec</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='content-area']/div/div[20]</td>
+	<td>development+osectest@amazee.com</td>
+</tr>
+</tbody></table>
+</body>
+</html>

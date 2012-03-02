@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://sta.osec.ch/" />
+<title>Osec Create Testblog</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Create Testblog</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/de/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Blog entry</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-title</td>
+	<td>Selenium Blogtest</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=edit-language</td>
+	<td>label=Deutsch</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=edit-field-term-location-value</td>
+	<td>label=- - Ekuador</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=edit-field-term-industry-value</td>
+	<td>label=- - Kosmetika</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-blog-public-description-0-value</td>
+	<td>Blogtest Description</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=VeröffentlichungseinstellungenVeröffentlicht</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-cck-access-type</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-create-code</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-premium</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-blog-quelle-0-url</td>
+	<td>http://www.amazeelabs.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-blog-quelle-0-title</td>
+	<td>AmazeeLabs Public</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=«Osec Members Only» und/oder «Webcode» Inhalte hier verfügbar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-blog-prot-quellen-0-title</td>
+	<td>AmazeeLabs hidden</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-blog-prot-quellen-0-url</td>
+	<td>http://www.amazeelabs.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Blog entry Selenium Blogtest wurde erstellt.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h1.title</td>
+	<td>Selenium Blogtest</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=AmazeeLabs Public</td>
+	<td>AmazeeLabs Public</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>asdfasdfasdfasdf</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=AmazeeLabs hidden</td>
+	<td>AmazeeLabs hidden</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
