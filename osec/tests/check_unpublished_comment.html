@@ -4,44 +4,33 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://sta.osec.ch/" />
-<title>Osec Testing Comments</title>
+<title>Delete Testevent</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">Testing Comments</td></tr>
+<tr><td rowspan="1" colspan="3">Delete Testevent Länderberatung</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>http://sta.osec.ch/de/blog/selenium-blogtest</td>
+	<td>/de/blog/selenium-blogtest</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>id=edit-subject</td>
+	<td>assertElementPresent</td>
+	<td>link=asdfasdfasdfasdf</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>id=switch_edit-comment</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=edit-comment</td>
+	<td>assertText</td>
+	<td>css=div.comment-content &gt; div.content &gt; p</td>
 	<td>asdfasdfasdfasdf</td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
-	<td>id=edit-submit-2</td>
-	<td></td>
+	<td>assertText</td>
+	<td>css=div.unpublished</td>
+	<td>Unpublished</td>
 </tr>
-<tr>
-	<td>verifyTextPresent</td>
-	<td>Der Kommentar wurde gespeichert, wird aber erst nach der Freigabe durch einen Administrator angezeigt.</td>
-	<td></td>
-</tr>
-
 </tbody></table>
 </body>
 </html>

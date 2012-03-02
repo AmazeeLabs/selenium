@@ -4,16 +4,16 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://sta.osec.ch/" />
-<title>Osec Check protected Fields (Anonymous)</title>
+<title>Osec User Login</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">Check protected Fields (Anonymous)</td></tr>
+<tr><td rowspan="1" colspan="3">User Login</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>http://sta.osec.ch/de/blog/selenium-blogtest</td>
+	<td>/de/</td>
 	<td></td>
 </tr>
 <tr>
@@ -22,13 +22,23 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertText</td>
-	<td>link=AmazeeLabs Public</td>
-	<td>AmazeeLabs Public</td>
+	<td>type</td>
+	<td>id=edit-name</td>
+	<td>development+osectest@amazee.com</td>
 </tr>
 <tr>
-	<td>assertTextNotPresent</td>
-	<td>AmazeeLabs hidden</td>
+	<td>type</td>
+	<td>id=edit-pass</td>
+	<td>nQQUPM48qw</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-submit-2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Willkommen Herr Selenium User!</td>
 	<td></td>
 </tr>
 

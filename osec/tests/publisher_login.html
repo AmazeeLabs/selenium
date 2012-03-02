@@ -4,36 +4,41 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://sta.osec.ch/" />
-<title>Delete Testevent</title>
+<title>Osec Publisher Login</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">Delete Testevent Länderberatung</td></tr>
+<tr><td rowspan="1" colspan="3">New Test</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>http://sta.osec.ch/de/blog/selenium-blogtest</td>
+	<td>/de/</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
-	<td>//div[@id='content']/div/div/ul/li[2]/a/span</td>
+	<td>assertTitle</td>
+	<td>Osec Export</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
-	<td>id=edit-delete</td>
-	<td></td>
+	<td>type</td>
+	<td>id=edit-name</td>
+	<td>development+osecpublisher@amazee.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-pass</td>
+	<td>s7bPYR5rQt</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>id=edit-submit</td>
+	<td>id=edit-submit-2</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyTextPresent</td>
-	<td>Blog entry Selenium Blogtest wurde gelöscht.</td>
+	<td>Willkommen Herr Selenium Publisher!</td>
 	<td></td>
 </tr>
 </tbody></table>
