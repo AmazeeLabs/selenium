@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://classicdriver.com.azdev.nine.ch" />
+<title>ClassicDriver Selling Dealer (Regular)</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">ClassicDriver Selling Dealer (Regular)</td></tr>
+</thead><tbody>
+<tr>
+	<td>deleteAllVisibleCookies</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>en/sell</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.corner-crop.color-professional &gt; div.inner &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.get-started-link.hidden-link &gt; a</td>
+	<td></td>
+</tr>
+<!--Contractual Partner-->
+<tr>
+	<td>store</td>
+	<td>SelenDealNor</td>
+	<td>SelenDealNorName</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-contractual-partner-field-company-name-und-0-value</td>
+	<td>${SelenDealNorName}</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=edit-profile-contractual-partner-field-contractual-salutation-und</td>
+	<td>label=Mr</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;Mr&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-contractual-partner-field-contractual-first-name-und-0-value</td>
+	<td>Lukas</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-contractual-partner-field-contractual-last-name-und-0-value</td>
+	<td>Abegg</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-contractual-partner-field-contractual-company-addr-und-0-thoroughfare</td>
+	<td>Fachstrasse 61</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-contractual-partner-field-contractual-company-addr-und-0-premise</td>
+	<td>Fachstrasse 55</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-contractual-partner-field-contractual-company-addr-und-0-postal-code</td>
+	<td>8942</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-contractual-partner-field-contractual-company-addr-und-0-locality</td>
+	<td>Oberrieden</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-contractual-partner-field-contractual-phone-general-und-0-number</td>
+	<td>079 312 53 74</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-contractual-partner-field-contractual-phone-mobile-und-0-number</td>
+	<td>079 312 53 74</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{Math.floor(Math.random()*111111)}</td>
+	<td>randomNr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-contractual-partner-field-contractual-email-und-0-email</td>
+	<td>development+${randomNr}@amazee.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-contractual-partner-field-confirm-contractual-email</td>
+	<td>development+${randomNr}@amazee.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-submit</td>
+	<td></td>
+</tr>
+<!--Public Profile-->
+<tr>
+	<td>assertValue</td>
+	<td>id=edit-field-account-email-und-0-email</td>
+	<td>development+${randomNr}@amazee.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-trading-name-default-1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-dealer-contact-und-0-thoroughfare</td>
+	<td>Fachstrasse 61</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-dealer-contact-und-0-premise</td>
+	<td>Fachstrasse 51</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-dealer-contact-und-0-postal-code</td>
+	<td>8942</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-dealer-contact-und-0-locality</td>
+	<td>Oberrieden</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-account-skype-und-0-value</td>
+	<td>luke_banana</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-account-email-und-0-email</td>
+	<td>Luki@gmx.ch</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-account-website-und-0-url</td>
+	<td>www.amazeelabs.com</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=edit-field-dealer-brands-und-0-field-dealer-brand-name-und</td>
+	<td>label=Porsche</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;Porsche&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=edit-field-dealer-brands-und-0-field-dealer-type-und</td>
+	<td>label=Independent Dealer</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;Independent Dealer&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=edit-field-dealer-brands-und-add-more</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=edit-field-dealer-brands-und-1-field-dealer-brand-name-und</td>
+	<td>label=BMW</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#edit-field-dealer-brands-und-1-field-dealer-brand-name-und &gt; option[value=&quot;BMW&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=edit-field-dealer-brands-und-1-field-dealer-type-und</td>
+	<td>label=Authorized Dealer</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#edit-field-dealer-brands-und-1-field-dealer-type-und &gt; option[value=&quot;Authorized Dealer&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-field-dealer-services-und-1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-field-dealer-services-und-2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-field-dealer-services-und-5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-dealer-other-serv-und-0-value</td>
+	<td>Eating Stuff</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-field-lang-spoken-und-it</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-field-lang-spoken-und-zh</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-other-lang-spoken-und-0-value</td>
+	<td>Growling</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-submit</td>
+	<td></td>
+</tr>
+<!--Support Contact-->
+<tr>
+	<td>select</td>
+	<td>id=edit-profile-support-contact-field-support-contact-salutation-und</td>
+	<td>label=Prof</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;Prof&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-support-contact-field-support-contact-first-name-und-0-value</td>
+	<td>Vasile</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-support-contact-field-support-contact-last-name-und-0-value</td>
+	<td>Chindris</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-support-contact-field-support-contact-email-und-0-email</td>
+	<td>vasile@amazee.com</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=edit-profile-support-contact-field-admin-contact-salutation-und</td>
+	<td>label=Miss</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#edit-profile-support-contact-field-admin-contact-salutation-und &gt; option[value=&quot;Miss&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-support-contact-field-admin-contact-first-name-und-0-value</td>
+	<td>Dania</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-support-contact-field-admin-contact-last-name-und-0-value</td>
+	<td>Gerhardt</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-support-contact-field-admin-contact-phone-gen-und-0-number</td>
+	<td>65465 545</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-support-contact-field-support-contact-phone-und-0-number</td>
+	<td>2132146789</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-support-contact-field-admin-contact-phone-gen-und-0-number</td>
+	<td>65465 54566</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-support-contact-field-admin-contact-email-und-0-email</td>
+	<td>dania@amazee.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-submit</td>
+	<td></td>
+</tr>
+<!--Billing data and VAT-->
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-billing-data-and-vat-field-billing-data-email-und-0-email</td>
+	<td>development@amazee.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-billing-data-and-vat-field-billing-company-name-und-0-value</td>
+	<td>Aamdskfmmasdf</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-billing-data-and-vat-field-billing-company-name-und-0-value</td>
+	<td>Aamdskfmmasdf AG</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-billing-data-and-vat-field-billing-billing-address-und-0-thoroughfare</td>
+	<td>Hinerbüpplingen 22</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-billing-data-and-vat-field-billing-billing-address-und-0-postal-code</td>
+	<td>5511</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-billing-data-and-vat-field-billing-billing-address-und-0-locality</td>
+	<td>Thurgau</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#edit-profile-billing-data-and-vat-field-billing-vat-country-und &gt; option[value=&quot;AD&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-profile-billing-data-and-vat-vat-id-0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=edit-profile-billing-data-and-vat-field-billing-vat-country-und</td>
+	<td>label=Andorra</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-billing-data-and-vat-field-vat-id-und-0-value</td>
+	<td>6546546422</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-submit</td>
+	<td></td>
+</tr>
+<!--Imprint-->
+<tr>
+	<td>assertValue</td>
+	<td>id=edit-profile-imprint-field-imprint-company-name-und-0-value</td>
+	<td>SelenDealNor</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=edit-profile-imprint-field-imprint-address-und-0-thoroughfare</td>
+	<td>Fachstrasse 61</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=edit-profile-imprint-field-imprint-address-und-0-premise</td>
+	<td>Fachstrasse 55</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=edit-profile-imprint-field-imprint-address-und-0-postal-code</td>
+	<td>8942</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=edit-profile-imprint-field-imprint-address-und-0-locality</td>
+	<td>Oberrieden</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=edit-profile-imprint-field-imprint-repr-firstname-und-0-value</td>
+	<td>Lukas</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=edit-profile-imprint-field-imprint-repr-lastname-und-0-value</td>
+	<td>Abegg</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=edit-profile-imprint-field-imprint-vat-no-und-0-value</td>
+	<td>6546546422</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-imprint-field-imprint-company-name-und-0-value</td>
+	<td>The Amazing Labs</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-imprint-field-imprint-address-und-0-thoroughfare</td>
+	<td>Püntstrasse 55</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-imprint-field-imprint-address-und-0-postal-code</td>
+	<td>8942</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-imprint-field-imprint-address-und-0-locality</td>
+	<td>Oberrieden</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-imprint-field-imprint-address-und-0-premise</td>
+	<td>Bla 2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-imprint-field-imprint-trade-reg-no-und-0-value</td>
+	<td>666</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-imprint-field-imprint-vat-no-und-0-value</td>
+	<td>11332244</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=edit-profile-imprint-field-imprint-repr-title-und</td>
+	<td>label=Miss</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;Miss&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-imprint-field-imprint-repr-firstname-und-0-value</td>
+	<td>Daniela</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-imprint-field-imprint-repr-lastname-und-0-value</td>
+	<td>Abegg</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-profile-imprint-field-imprint-other-information-und-0-value</td>
+	<td>This is some other information!</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-submit</td>
+	<td></td>
+</tr>
+<!--Submit-->
+<tr>
+	<td>click</td>
+	<td>id=edit-agreement</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Congratulations! Registration complete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Thank you for applying for an account</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Thank you for registering to sell on Classic Driver</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>window.document.getElementById(&quot;user-uid&quot;).innerHTML</td>
+	<td>dealerNormal-uid</td>
+</tr>
+</tbody></table>
+</body>
+</html>

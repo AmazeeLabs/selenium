@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://classicdriver.com.azdev.nine.ch/" />
+<title>ClassicDriver Create Auction (Auction House)</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">ClassicDriver Create Auction (Auction House)</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/en</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Sell</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=here</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-title</td>
+	<td>Selenium Auction</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-auction-description-und-0-value</td>
+	<td>This is a description</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-location-und-0-thoroughfare</td>
+	<td>Seleniumstreet 4</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-location-und-0-postal-code</td>
+	<td>45634</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-location-und-0-locality</td>
+	<td>Denver</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-auction-id-und-0-value</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=edit-field-auction-location-reference-und</td>
+	<td>label=Salesroom 1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;36&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-auction-location-other-und-0-thoroughfare</td>
+	<td>Seleniumstrasse 3</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-auction-location-other-und-0-postal-code</td>
+	<td>234234</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-auction-location-other-und-0-locality</td>
+	<td>Zurich</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-field-auction-date-und-0-value-datepicker-popup-0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-auction-date-und-0-value-datepicker-popup-0</td>
+	<td>07/30/2012</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select.ui-datepicker-month</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select.ui-datepicker-year</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#field-auction-date-add-more-wrapper &gt; fieldset.form-wrapper</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-field-auction-date-und-0-value-datepicker-popup-0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select.ui-datepicker-year</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=17</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-auction-website-und-0-url</td>
+	<td>http://www.amazeelabs.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-submit</td>
+	<td></td>
+</tr>
+<!--Choose options-->
+<tr>
+	<td>type</td>
+	<td>id=edit-field-auction-queries-skype-und-0-value</td>
+	<td>luke_banana</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-auction-queries-email-und-0-email</td>
+	<td>development@amazeelabs.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-auction-featured-auction-day-option</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Selenium Auction</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>This is a description</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Seleniumstreet 4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>45634&nbsp;&nbsp;Denver</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Seleniumstrasse 3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>luke_banana</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Thank you for creating an Auction on Classic Driver!</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Congratulations! Auction created!</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>window.jQuery(&quot;.node-nid&quot;).html()</td>
+	<td>auctionAuctionHouseID</td>
+</tr>
+</tbody></table>
+</body>
+</html>

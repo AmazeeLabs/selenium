@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://classicdriver.com.azdev.nine.ch" />
+<title>ClassicDriver Delete Test-Dealer (Madness)</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">ClassicDriver Delete Test-Dealer (Madness)</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>en/user</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=toolbar-link-admin-people</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>${SelenDealMadName}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>&quot;id=edit-accounts-&quot; + storedVars['dealerMad-uid'];</td>
+	<td>elementLocatorForUnblocking</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>${elementLocatorForUnblocking}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=edit-operation</td>
+	<td>Cancel the selected user accounts</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-submit--2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>${SelenDealMadName}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-user-cancel-method--5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-submit</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://sta.osec.ch/" />
+<title>Osec Check Registration for Events (Anonymous)</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Osec Check Registration for Events (Anonymous)</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>de/event/selenium-eventtest-laenderberatung</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Jetzt anmelden! »</td>
+	<td></td>
+</tr>
+<!--Captcha umgehen-->
+<tr>
+	<td>storeText</td>
+	<td>css=span.field-prefix</td>
+	<td>calculationCaptcha</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['calculationCaptcha'].substring(0, storedVars['calculationCaptcha'].length-1)</td>
+	<td>extractedCalc</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>eval(storedVars['extractedCalc']);</td>
+	<td>resultOfCalc</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-captcha-response</td>
+	<td>${resultOfCalc}</td>
+</tr>
+<!--Fill out form-->
+<tr>
+	<td>assertText</td>
+	<td>id=edit-event-period</td>
+	<td>Samstag, 01. Juli 2023 - Samstag, 02. September 2023</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-company</td>
+	<td>Amazee Labs</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-firstname</td>
+	<td>Lukas</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-lastname</td>
+	<td>Abegg</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-department</td>
+	<td>Development</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-address</td>
+	<td>Fachstrasse 61</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-postal-code</td>
+	<td>8942</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-place</td>
+	<td>Oberrieden</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-telephone</td>
+	<td>044 722 32 90</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-osec-member-0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-comments</td>
+	<td>Testkommentar</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-email</td>
+	<td>development+osecpublisher@amazee.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-submit</td>
+	<td></td>
+</tr>
+<!--Info check-->
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Wir freuen uns auf einen interessanten Anlass und Ihre Teilnahme.<br /><br />Sie werden zwecks Terminvereinbarung von unserem ExportHelp in Kürze telefonisch kontaktiert.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Anmeldebestätigung Selenium Eventtest Länderberatung</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Development</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Oberrieden</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>development+osecpublisher@amazee.com</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Abegg</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

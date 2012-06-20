@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://classicdriver.com.azdev.nine.ch" />
+<title>ClassicDriver Unblock User And Provide Link (as Admin)</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">ClassicDriver Unblock User And Provide Link (as Admin)</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>en/user</td>
+	<td></td>
+</tr>
+<!--Change Mailsystem-->
+<tr>
+	<td>clickAndWait</td>
+	<td>id=toolbar-link-admin-config</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Mail System</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeSelectedValue</td>
+	<td>id=edit-mailsystem-default-system</td>
+	<td>defaultMailConfig</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=edit-mailsystem-default-system</td>
+	<td>label=DevelMailLog</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-submit</td>
+	<td></td>
+</tr>
+<!--Unblock User-->
+<tr>
+	<td>clickAndWait</td>
+	<td>id=toolbar-link-admin-people</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>${SelenAucNorName}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>&quot;id=edit-accounts-&quot; + storedVars['AuctionNor-uid'];</td>
+	<td>elementLocatorForUnblocking</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>${elementLocatorForUnblocking}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=edit-operation</td>
+	<td>Unblock the selected users</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-submit--2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Your account at Classic Driver has been activated.</td>
+	<td></td>
+</tr>
+<!--Email extraction-->
+<tr>
+	<td>storeEval</td>
+	<td>window.jQuery(&quot;.messages pre&quot;).html().match(/(\b(https?|ftp|file):\/\/[-A-Z0-9+&amp;@#\/%?=~_|!:,.;]*[-A-Z0-9+&amp;@#\/%=~_|])/ig)[0]</td>
+	<td>auctionNorAccountLink</td>
+</tr>
+<!--Undo Mailsystemchanges-->
+<tr>
+	<td>clickAndWait</td>
+	<td>id=toolbar-link-admin-config</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Mail System</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=edit-mailsystem-default-system</td>
+	<td>label=${defaultMailConfig}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>The configuration options have been saved</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
