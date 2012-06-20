@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://sta.osec.ch/" />
+<title>Osec Create Testevent Events and Businesstrips</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Osec Create Testevent Events and Businesstrips</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/de/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=exact:Event: Events and Business Trips</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-title</td>
+	<td>Selenium Eventtest Businesstrips</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-event-programme-0-value</td>
+	<td>Michael Schmid</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-event-target-audience-0-value</td>
+	<td>Alle Interessierten</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-event-organizer-0-value</td>
+	<td>Amazee AG</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-event-sponsor-0-value</td>
+	<td>Ich AG</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-event-language-0-value</td>
+	<td>Deutsch</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-field-event-owner-value-52</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-event-price-0-value</td>
+	<td>400 Euro</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-event-additional-label-0-value</td>
+	<td>Weitere Infos (Label)</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-event-additional-info-0-value</td>
+	<td>Hier stehen die weiteren Informationen</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=edit-field-term-location-value</td>
+	<td>label=- - Schweiz</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=edit-field-term-industry-value</td>
+	<td>label=- - MEM Industrie</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>id=edit-field-show-also-in-country-panel-value</td>
+	<td>label=- - Belize</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>id=edit-field-show-also-in-topics-panel-value</td>
+	<td>label=- - Informations- und Kommunikationstechnologie (ICT)</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=edit-language</td>
+	<td>label=Deutsch</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-field-event-period-0-value-datepicker-popup-0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-event-period-0-value-datepicker-popup-0</td>
+	<td>20.11.2025</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-field-event-period-0-value-timeEntry-popup-1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-field-event-period-0-value2-datepicker-popup-0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-event-period-0-value2-datepicker-popup-0</td>
+	<td>25.11.2025</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-main-partner-0-value</td>
+	<td>Test AG</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-co-partner-0-value</td>
+	<td>Co-Partner-AG</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h1.title</td>
+	<td>Selenium Eventtest Businesstrips</td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Alle Interessierten</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Ich AG</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Deutsch</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>400 Euro</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Weitere Infos (Label)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Donnerstag, 20. November 2025</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>25. November 2025</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Selenium Eventtest Businesstrips wurde erstellt.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>0:00</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

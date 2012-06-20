@@ -3,47 +3,37 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://sta.osec.ch/" />
-<title>Delete Testevent</title>
+<link rel="selenium.base" href="http://exportday.sta.osec.ch/" />
+<title>Osec Check protected Fields Page (Anonymous)</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">Delete Testevent Länderberatung</td></tr>
+<tr><td rowspan="1" colspan="3">Osec Check protected Fields Page (Anonymous)</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>/de/blog/selenium-blogtest</td>
+	<td>de/content/selenium-page-test</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Selenium Page Test</td>
 	<td></td>
 </tr>
 <tr>
 	<td>assertTextNotPresent</td>
-	<td>Sorry</td>
+	<td>Kommentar</td>
 	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//*/form[@class='cck-private-fields-password']//input[@class='form-text']</td>
+	<td>${webcodePage}</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>//div[@id='content']/div/div/ul/li[2]/a/span</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>4000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>id=edit-delete</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>id=edit-submit</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyTextPresent</td>
-	<td>Blog entry Selenium Blogtest wurde gelöscht.</td>
+	<td>//*/form[@class='cck-private-fields-password']//input[@class='form-submit']</td>
 	<td></td>
 </tr>
 </tbody></table>

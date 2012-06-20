@@ -3,22 +3,27 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://sta.osec.ch/" />
-<title>Delete Testevent</title>
+<link rel="selenium.base" href="http://exportday.sta.osec.ch/" />
+<title>Osec Delete Test-Forum Page</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">Delete Testevent Länderberatung</td></tr>
+<tr><td rowspan="1" colspan="3">Osec Delete Test-Forum Page</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>/de/blog/selenium-blogtest</td>
+	<td>/de/content/selenium-forum-page-test</td>
 	<td></td>
 </tr>
 <tr>
 	<td>assertTextNotPresent</td>
 	<td>Sorry</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Selenium Forum Page Test</td>
 	<td></td>
 </tr>
 <tr>
@@ -28,7 +33,7 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>4000</td>
+	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
@@ -43,7 +48,7 @@
 </tr>
 <tr>
 	<td>verifyTextPresent</td>
-	<td>Blog entry Selenium Blogtest wurde gelöscht.</td>
+	<td>Forum Page Selenium Forum Page Test wurde gelöscht</td>
 	<td></td>
 </tr>
 </tbody></table>

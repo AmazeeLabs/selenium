@@ -3,28 +3,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://sta.osec.ch/" />
-<title>Osec Check protected Fields (Anonymous)</title>
+<link rel="selenium.base" href="http://exportday.sta.osec.ch/" />
+<title>Osec Check protected Fields Forum Page (Anonymous)</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">Check protected Fields (Anonymous)</td></tr>
+<tr><td rowspan="1" colspan="3">Osec Check protected Fields Forum Page (Anonymous)</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>/de/blog/selenium-blogtest</td>
+	<td>de/content/selenium-forum-page-test</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTextPresent</td>
-	<td>Anmelden</td>
+	<td>assertTextPresent</td>
+	<td>Selenium Forum Page Test</td>
 	<td></td>
-</tr>
-<tr>
-	<td>assertText</td>
-	<td>link=AmazeeLabs Public</td>
-	<td>AmazeeLabs Public</td>
 </tr>
 <tr>
 	<td>assertTextNotPresent</td>
@@ -32,14 +27,29 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTextPresent</td>
-	<td>Um einen Kommentar zu verfassen, müssen Sie sich zuerst einloggen. Wenn Sie noch kein Benutzerkonto haben, können Sie sich hier registrieren.</td>
+	<td>assertTextNotPresent</td>
+	<td>Geschützte Quellen</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>Geschützter Download</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>geschütztes Label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>Kommentar</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>//*/form[@class='cck-private-fields-password']//input[@class='form-text']</td>
-	<td>${webcodeBlog}</td>
+	<td>${webcodeForumPage}</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>

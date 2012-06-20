@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://sta.osec.ch/" />
+<title>Osec Create Testevent Fairs</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Osec Create Testevent Fairs</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/de/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=exact:Event: Fairs</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-title</td>
+	<td>Selenium Eventtest Fairs</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-event-fairprofile-0-value</td>
+	<td>Hier steht das Messeprofil</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-event-products-sector-0-value</td>
+	<td>Hier stehen alle Produkte/Sektoren</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-event-target-audience-0-value</td>
+	<td>Für alle Interessierten Menschen</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-event-organizer-0-value</td>
+	<td>Amazee Labs AG</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-event-facts-figures-0-value</td>
+	<td>Over 9000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-event-additional-label-0-value</td>
+	<td>Hier steht das Weitere Informationen-Label</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-event-additional-info-0-value</td>
+	<td>Hier stehen weitere Informationen</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=edit-field-term-location-value</td>
+	<td>label=- - Bolivien</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=edit-field-term-industry-value</td>
+	<td>label=- - Chemische Produkte, Pharma</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>id=edit-field-term-topic-value</td>
+	<td>label=- Exportstarter</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>id=edit-field-exporthelp-value</td>
+	<td>label=- Freihandelsabkommen</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=edit-field-term-4th-category-value</td>
+	<td>label=Kontakte</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=edit-field-term-4th-category-value</td>
+	<td>label=Beratung</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>id=edit-field-show-also-in-country-panel-value</td>
+	<td>label=- - Ekuador</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>id=edit-field-show-also-in-topics-panel-value</td>
+	<td>label=- Industrie</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-field-event-owner-value-52</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-field-event-period-0-value-datepicker-popup-0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-event-period-0-value-datepicker-popup-0</td>
+	<td>15.07.2028</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-field-event-period-0-value2-datepicker-popup-0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-event-period-0-value2-datepicker-popup-0</td>
+	<td>18.08.2028</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-field-event-join-deadline-0-value-datepicker-popup-0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#edit-field-event-join-deadline-0-value-wrapper &gt; label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-event-join-deadline-0-value-datepicker-popup-0</td>
+	<td>14.07.2027</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=edit-field-event-timezone-timezone</td>
+	<td>label=Africa/Ceuta</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>Sorry</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h1.title</td>
+	<td>Selenium Eventtest Fairs</td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Hier stehen alle Produkte/Sektoren</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Für alle Interessierten Menschen</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Amazee Labs AG</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Over 9000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Hier steht das Weitere Informationen-Label </td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Samstag, 15. Juli 2028</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>18. August 2028</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>0:00</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://sta.osec.ch/" />
-<title>Osec Create Testevent Countryconsulting</title>
+<title>Osec Check for correct time display</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">New Test</td></tr>
+<tr><td rowspan="1" colspan="3">Osec Check for correct time display</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -24,7 +24,7 @@
 <tr>
 	<td>type</td>
 	<td>id=edit-title</td>
-	<td>Selenium Eventtest Länderberatung</td>
+	<td>Selenium Time Test</td>
 </tr>
 <tr>
 	<td>select</td>
@@ -39,7 +39,7 @@
 <tr>
 	<td>type</td>
 	<td>id=edit-field-talktime-0-value</td>
-	<td>Hier steht die Gesprächsdauer</td>
+	<td>Gesprächsdauer</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -64,7 +64,7 @@
 <tr>
 	<td>type</td>
 	<td>id=edit-field-event-price-0-value</td>
-	<td>500 Euro</td>
+	<td>20 Euro</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -72,9 +72,9 @@
 	<td>Hier steht das Weitere Informationen-Label</td>
 </tr>
 <tr>
-	<td>select</td>
-	<td>id=edit-field-term-4th-category-value</td>
-	<td>label=Beratung</td>
+	<td>type</td>
+	<td>id=edit-field-event-additional-info-0-value</td>
+	<td>Hier stehen weitere Infos</td>
 </tr>
 <tr>
 	<td>addSelection</td>
@@ -85,11 +85,6 @@
 	<td>addSelection</td>
 	<td>id=edit-field-show-also-in-topics-panel-value</td>
 	<td>label=- - Medtech</td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>id=edit-field-event-timezone-timezone</td>
-	<td>label=Africa/Bangui</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -104,17 +99,22 @@
 <tr>
 	<td>type</td>
 	<td>id=edit-field-event-period-0-value-datepicker-popup-0</td>
-	<td>01.07.2023</td>
+	<td>01.07.2037</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=edit-field-event-period-0-value2-datepicker-popup-0</td>
-	<td>02.09.2023</td>
+	<td>02.09.2038</td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>id=edit-field-event-period-0-value2-datepicker-popup-0</td>
-	<td></td>
+	<td>type</td>
+	<td>id=edit-field-event-period-0-value-timeEntry-popup-1</td>
+	<td>18:30</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-event-period-0-value2-timeEntry-popup-1</td>
+	<td>16:30</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
@@ -123,55 +123,34 @@
 </tr>
 <tr>
 	<td>verifyTextPresent</td>
-	<td>Selenium Eventtest Länderberatung wurde erstellt</td>
+	<td>Selenium Time Test wurde erstellt</td>
 	<td></td>
 </tr>
 <tr>
 	<td>assertText</td>
 	<td>css=h1.title</td>
-	<td>Selenium Eventtest Länderberatung</td>
+	<td>Selenium Time Test</td>
 </tr>
 <tr>
 	<td>assertTextPresent</td>
-	<td>Samstag, 01. Juli 2023</td>
+	<td>01. Juli 2037</td>
 	<td></td>
 </tr>
 <tr>
 	<td>assertTextPresent</td>
-	<td>2. September 2023</td>
+	<td>02. September 2038</td>
 	<td></td>
 </tr>
 <tr>
 	<td>assertTextPresent</td>
-	<td>Hier steht die Gesprächsdauer </td>
+	<td>18:30</td>
 	<td></td>
 </tr>
 <tr>
 	<td>assertTextPresent</td>
-	<td>Amazee Labs AG</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTextPresent</td>
-	<td>Deutsch</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTextPresent</td>
-	<td>Länderexperte</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTextPresent</td>
-	<td>500 Euro</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTextNotPresent</td>
-	<td>0:00</td>
+	<td>16:30</td>
 	<td></td>
 </tr>
 </tbody></table>
 </body>
 </html>
-

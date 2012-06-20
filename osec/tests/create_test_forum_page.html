@@ -3,13 +3,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://sta.osec.ch/" />
-<title>Osec Create Testblog</title>
+<link rel="selenium.base" href="http://exportday.sta.osec.ch/" />
+<title>Osec Create Test-Forum Page</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">Create Testblog</td></tr>
+<tr><td rowspan="1" colspan="3">Osec Create Test-Forum Page</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -18,33 +18,18 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>link=Blog entry</td>
+	<td>link=Forum Page</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=edit-title</td>
-	<td>Selenium Blogtest</td>
+	<td>Selenium Forum Page Test</td>
 </tr>
 <tr>
-	<td>select</td>
-	<td>id=edit-language</td>
-	<td>label=Deutsch</td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>id=edit-field-term-location-value</td>
-	<td>label=- - Ekuador</td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>id=edit-field-term-industry-value</td>
-	<td>label=- - Chemische Produkte, Pharma</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=edit-field-blog-public-description-0-value</td>
-	<td>Blogtest Description</td>
+	<td>click</td>
+	<td>link=Veröffentlichungseinstellungen</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
@@ -69,22 +54,27 @@
 <tr>
 	<td>storeText</td>
 	<td>id=webcode</td>
-	<td>webcodeBlog</td>
+	<td>webcodeForumPage</td>
 </tr>
 <tr>
 	<td>storeText</td>
 	<td>id=webcode-link</td>
-	<td>webcodeLinkBlog</td>
+	<td>webcodeLinkForumPage</td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=edit-field-blog-quelle-0-url</td>
-	<td>http://www.amazeelabs.com</td>
+	<td>id=edit-field-aboutus-page-teaser-0-value</td>
+	<td>Dies ist ein Teasertext</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=edit-field-blog-quelle-0-title</td>
 	<td>AmazeeLabs Public</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-field-blog-quelle-0-url</td>
+	<td>http://www.amazeelabs.com</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -107,16 +97,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTextPresent</td>
-	<td>Blog entry Selenium Blogtest wurde erstellt.</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertText</td>
-	<td>css=h1.title</td>
-	<td>Selenium Blogtest</td>
-</tr>
-<tr>
 	<td>assertText</td>
 	<td>link=AmazeeLabs Public</td>
 	<td>AmazeeLabs Public</td>
@@ -127,23 +107,8 @@
 	<td>AmazeeLabs hidden</td>
 </tr>
 <tr>
-	<td>verifyTextPresent</td>
-	<td>Selenium Publisher</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyTextPresent</td>
-	<td>development+osecpublisher@amazee.com</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyTextPresent</td>
-	<td>Twitter</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyTextPresent</td>
-	<td>Website</td>
+	<td>assertTextPresent</td>
+	<td>Forum Page Selenium Forum Page Test wurde erstellt.</td>
 	<td></td>
 </tr>
 </tbody></table>

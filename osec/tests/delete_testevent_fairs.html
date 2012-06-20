@@ -4,16 +4,16 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://sta.osec.ch/" />
-<title>Delete Testevent</title>
+<title>Osec Delete Testevent Fairs</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">Delete Testevent Länderberatung</td></tr>
+<tr><td rowspan="1" colspan="3">Osec Delete Testevent Fairs</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>/de/blog/selenium-blogtest</td>
+	<td>de/event/selenium-eventtest-fairs</td>
 	<td></td>
 </tr>
 <tr>
@@ -22,13 +22,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>assertText</td>
+	<td>css=h1.title</td>
+	<td>Selenium Eventtest Fairs</td>
+</tr>
+<tr>
 	<td>clickAndWait</td>
 	<td>//div[@id='content']/div/div/ul/li[2]/a/span</td>
 	<td></td>
 </tr>
 <tr>
 	<td>pause</td>
-	<td>4000</td>
+	<td>5000</td>
 	<td></td>
 </tr>
 <tr>
@@ -42,8 +47,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTextPresent</td>
-	<td>Blog entry Selenium Blogtest wurde gelöscht.</td>
+	<td>assertTextPresent</td>
+	<td>Selenium Eventtest Fairs wurde gelöscht</td>
 	<td></td>
 </tr>
 </tbody></table>
