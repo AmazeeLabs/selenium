@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://new.invest-in-switzerland.com/global/" />
+<title>Osec Invest Event Registration (Anonymous)</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Osec Invest Event Registration (Anonymous)</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/de</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Kalender</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Sino-Swiss Economic Forum</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Register now. »</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-company</td>
+	<td>Amazee Labs</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-firstname</td>
+	<td>Selenium</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-lastname</td>
+	<td>Testbot</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-function</td>
+	<td>Tester</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-address</td>
+	<td>Technoparkstrasse 1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-postal-code</td>
+	<td>8005</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-place</td>
+	<td>Zürich</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-telephone</td>
+	<td>075 564 21 33</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-email</td>
+	<td>development+osecpublisher@amazee.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-comments</td>
+	<td>This is a comment</td>
+</tr>
+<!--Captcha umgehen-->
+<tr>
+	<td>storeText</td>
+	<td>css=span.field-prefix</td>
+	<td>calculationCaptcha</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['calculationCaptcha'].substring(0, storedVars['calculationCaptcha'].length-1)</td>
+	<td>extractedCalc</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>eval(storedVars['extractedCalc']);</td>
+	<td>resultOfCalc</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-captcha-response</td>
+	<td>${resultOfCalc}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Registration confirmation</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
