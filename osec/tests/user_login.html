@@ -22,18 +22,23 @@
 	<td></td>
 </tr>
 <tr>
-	<td>type</td>
-	<td>id=edit-name-1</td>
+	<td>assertEval</td>
+	<td>window.jQuery('#user-login-form').find('input[name=name]').attr('value', 'development+osectest@amazee.com').attr('value')</td>
 	<td>development+osectest@amazee.com</td>
 </tr>
 <tr>
-	<td>type</td>
-	<td>id=edit-pass</td>
+	<td>assertEval</td>
+	<td>window.jQuery('#user-login-form').find('input[name=pass]').attr('value', 'nQQUPM48qw').attr('value')</td>
 	<td>nQQUPM48qw</td>
 </tr>
 <tr>
+	<td>storeEval</td>
+	<td>window.jQuery('#user-login-form').find('input[name=op]').attr('id')</td>
+	<td>submitButtonId</td>
+</tr>
+<tr>
 	<td>clickAndWait</td>
-	<td>id=edit-submit-3</td>
+	<td>${submitButtonId}</td>
 	<td></td>
 </tr>
 <tr>
