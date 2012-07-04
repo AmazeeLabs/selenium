@@ -12,23 +12,18 @@
 <tr><td rowspan="1" colspan="3">Osec Invest Event Registration (Anonymous)</td></tr>
 </thead><tbody>
 <tr>
+	<td>storeEval</td>
+	<td>storedVars['investDomain'] + &quot;/de/event/selenium-testevent-invest&quot;</td>
+	<td>investCreatedUrl</td>
+</tr>
+<tr>
 	<td>open</td>
-	<td>javascript{storedVars['investDomain'] + /de/}</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>link=Kalender</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>link=Sino-Swiss Economic Forum</td>
+	<td>${investCreatedUrl}</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>link=Register now. »</td>
+	<td>link=Jetzt anmelden! »</td>
 	<td></td>
 </tr>
 <tr>
@@ -109,7 +104,7 @@
 </tr>
 <tr>
 	<td>verifyTextPresent</td>
-	<td>Registration confirmation</td>
+	<td>Anmeldebestätigung Selenium Testevent Invest</td>
 	<td></td>
 </tr>
 <tr>

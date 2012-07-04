@@ -4,41 +4,51 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://osec.ch/" />
-<title>Osec Publisher Login</title>
+<title>Osec Publisher Invest Login</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">New Test</td></tr>
+<tr><td rowspan="1" colspan="3">Osec Publisher Invest Login</td></tr>
 </thead><tbody>
 <tr>
-	<td>open</td>
-	<td>/de/</td>
+	<td>deleteAllVisibleCookies</td>
+	<td></td>
 	<td></td>
 </tr>
 <tr>
-	<td>assertTitle</td>
-	<td>Osec Export</td>
+	<td>open</td>
+	<td>${investDomain}/user</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>Sorry</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>css=#user-login-form input[name=name]</td>
+	<td>id=edit-name</td>
 	<td>development+osecpublisher@amazee.com</td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>css=#user-login-form input[name=pass]</td>
+	<td>id=edit-pass</td>
 	<td>s7bPYR5rQt</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>css=#user-login-form input[name=op]</td>
+	<td>id=edit-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>Sorry</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyTextPresent</td>
-	<td>Willkommen Herr Selenium Publisher!</td>
+	<td>Selenium Publisher</td>
 	<td></td>
 </tr>
 </tbody></table>
