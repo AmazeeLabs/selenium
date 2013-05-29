@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.amazeemetrics.com/" />
+<title>DE: Check Webform</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">DE: Check Webform</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/de/kontakt</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Kontaktieren Sie uns</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Mail</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Firma</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Nachricht</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Amazee Metrics AG</td>
+	<td></td>
+</tr>
+<!--Check normal values-->
+<tr>
+	<td>type</td>
+	<td>id=edit-submitted-name</td>
+	<td>Selenium Testbot</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-submitted-e-mail</td>
+	<td>technology@amazeelabs.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-submitted-firma</td>
+	<td>Amazee Labs AG</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-submitted-nachricht</td>
+	<td>Dies ist eine automatisierte Nachricht des Selenium Testbots. Have a nice day!</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Zurück zur Webseite</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Zurück zur Webseite</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Kontaktieren Sie uns</td>
+	<td></td>
+</tr>
+<!--Check without email-->
+<tr>
+	<td>open</td>
+	<td>/de/kontakt</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-submitted-name</td>
+	<td>Selenium Testbot</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-submitted-firma</td>
+	<td>Amazee Labs AG</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-submitted-nachricht</td>
+	<td>Lorem Lorem Lorem Ipsum Test</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Bitte füllen Sie das Feld &quot;E-Mail&quot; aus.</td>
+	<td></td>
+</tr>
+<!--Check without Name-->
+<tr>
+	<td>open</td>
+	<td>/de/kontakt</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-submitted-firma</td>
+	<td>Amazee Labs AG</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-submitted-e-mail</td>
+	<td>technology@amazeelabs.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-submitted-nachricht</td>
+	<td>Lorem Lorem Lorem Ipsum Test</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Bitte füllen Sie das Feld &quot;Name&quot; aus.</td>
+	<td></td>
+</tr>
+<!--Check without Message-->
+<tr>
+	<td>open</td>
+	<td>/de/kontakt</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-submitted-name</td>
+	<td>Selenium Testbot</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-submitted-e-mail</td>
+	<td>technology@amazeelabs.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-submitted-firma</td>
+	<td>Amazee Labs AG</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=edit-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Bitte füllen Sie das Feld &quot;Nachricht&quot; aus.</td>
+	<td>Bitte füllen Sie das Feld &quot;Nachricht&quot; aus.</td>
+</tr>
+<!--Check wrong mail-->
+<tr>
+	<td>open</td>
+	<td>/de/kontakt</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-submitted-name</td>
+	<td>Selenium Testbot</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-submitted-firma</td>
+	<td>Amazee Labs AG</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-submitted-nachricht</td>
+	<td>Lorem Lorem Lorem Ipsum Test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=edit-submitted-e-mail</td>
+	<td>amazeelabs.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=edit-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>Zurück zum Formular</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
